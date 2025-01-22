@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "587120013068",
+    "project_id": "mother-bet",
+    "storage_bucket": "mother-bet.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:587120013068:android:62aff9aa5f9583398be329",
+        "android_client_info": {
+          "package_name": "com.example.mother"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_w7Ryd77fp0Mv3fvOVcrSK9GwkGIs37c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

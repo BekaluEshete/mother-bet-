@@ -1,0 +1,39 @@
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    id "dev.flutter.flutter-gradle-plugin"
+    id "com.google.gms.google-services"
+}
+
+android {
+    namespace = "com.example.mother"
+    compileSdk = 34 // Specify the correct SDK version
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8" // Use a string here
+    }
+
+    defaultConfig {
+        applicationId = "com.example.mother"
+        minSdk = 23// Ensure this matches your Flutter project's minimum SDK
+        targetSdk = 34
+        versionCode = 1 // Use an integer for the app version
+        versionName = "1.0" // Use a string for the app version
+        ndkVersion = "25.2.9519653" // Replace with your installed NDK version or remove if unused
+    }
+
+    buildTypes {
+        release {
+            signingConfig = signingConfigs.debug
+        }
+    }
+}
+
+flutter {
+    source = "../.." // Points to the root of your Flutter project
+}
